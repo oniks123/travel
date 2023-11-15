@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background-color: #555;
+    width: 100vw;
+    height: 50px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.header-container {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.header-container ul li {
+    list-style-type: none;
+}
+
+.header-container a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.header-container a:hover {
+    color: rgb(214, 211, 211);
+}
+
+                                                              /* main */
+
+main {
+    max-width: 1200px;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+                                                                /* post */
+
+.post-cont {
+    margin: 30px 0;
+    font-size: 17px;
+    width: 650px;
+}
+
+.post-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.description {
+    text-align: justify;
+}
+
+.post-title {
+    font-size: 20px;
+}
+
+.post-title a {
+    text-decoration: none;
+    color: black;
+}
+
+.post-title a:hover {
+    text-decoration: underline;
+}
+
+.post-body {
+    margin: 10px 0;
+}
+
+.post-info p {
+    margin: 10px 0;
+}
+
+.post-body ul li {
+    margin: 7px 0;
+}
+                                    /* info */
+
+.info{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info-block {
+    background-color: #f6f6f6;
+    padding: 15px;
+    border-radius: 7px;
+    width: 310px;
+}
+
+.enter-head {
+    border-bottom: 2px solid red;
+    padding: 7px 0;
+}
+
+.enter-body {
+    margin-top: 7px;
+}
+
+.login p{
+    padding: 10px 0;
+}
+
+.password p {
+    padding: 10px 0;
+}
+
+.login input{
+    width: 90%;
+    height: 35px;
+    padding: 0 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+}
+
+.password input {
+    width: 90%;
+    height: 35px;
+    padding: 0 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+}
+
+.enter-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    border-radius: 11px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.register{
+    font-size: 15px;
+    margin-top: 21px;
+    display: flex;
+}
+
+.register a {
+    color: black;
+    text-decoration: none;
+    margin: 0 7px;
+}
