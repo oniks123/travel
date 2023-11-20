@@ -25,7 +25,7 @@
 
                 ?>
                     <div class="profile-img">
-                        <img src="../img/avatars/1.png" alt="">
+                        <img draggable="false" src="../img/avatars/1.png" alt="">
                     </div>
                     
                     <div class="username">
@@ -39,7 +39,7 @@
                             if ($username["role"] == "admin") {
                                 ?>
                                 <div class="profil-menu-cont">
-                                    <img src="../img/svg/admin.svg" alt=""> 
+                                    <img draggable="false" src="../img/svg/admin.svg" alt=""> 
                                     <p>Админ панель</p>
                                 </div>
                                 <?
@@ -48,18 +48,18 @@
                         ?>
 
                         <div class="profil-menu-cont">
-                            <img src="../img/svg/settings.svg" alt=""> 
+                            <img draggable="false" src="../img/svg/settings.svg" alt=""> 
                             <p>Настройки</p>
                         </div>
                     
                         <div class="profil-menu-cont">
-                            <img src="../img/svg/support.svg" alt="">
+                            <img draggable="false" src="../img/svg/support.svg" alt="">
                             <p>Помощь</p>
                         </div>
                     
                         <a href="../core/logout.php">
                             <div class="profil-menu-cont">
-                                <img src="../img/svg/exit.svg" alt=""> 
+                                <img draggable="false" src="../img/svg/exit.svg" alt=""> 
                                 <p>Выйти</p>
                             </div>
                         </a>

@@ -1,7 +1,7 @@
 <div class="footer-cont">
     <div class="social-network">
-        <a href="#"><img src="../img/social-network/inst.svg" alt=""></a>
-        <a href="#"><img src="../img/social-network/tg.svg" alt=""></a>
+        <a draggable="false" href="#"><img draggable="false" src="../img/social-network/inst.svg" alt=""></a>
+        <a draggable="false" href="#"><img draggable="false" src="../img/social-network/tg.svg" alt=""></a>
     </div>
 
     <div class="menu">

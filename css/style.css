@@ -11,7 +11,7 @@ body {
 
 header {
     background-color: #ffffff;
-    width: 100vw;
+    width: 100%;
     height: 60px;
     font-size: 16px;
     font-weight: bold;
@@ -115,106 +115,239 @@ header {
 
 main {
     max-width: 1200px;
-    margin: 30px auto;
+    margin: 0px auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #ffffff;
 }
 
-                    /* post */
 
-.posts {
-    display: flex;
-    align-items: center;
-    width: 800px;
-    border-radius: 20px;
-    box-shadow: black 0 0 7px 0px;
+/* sections */
+
+section:not(:last-child) {
+    border-bottom: 2px solid black;
 }
 
-.post-cont {
+.welcome {
     width: 100%;
-    overflow: hidden;
+    height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
     position: relative;
 }
 
-.slider-container {
+.welcome::before {
+    content: "";
+    background-image: url(https://adventureblog.net/wp-content/uploads/2021/01/mountain.jpg);
+    opacity: 0.75;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;   
+    z-index: 1;
+}
+
+.welcome-title {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
+    height: 100%;
+    font-size: 50px;
+    letter-spacing: 0.5em;
+    color: white;
+    font-weight: bold;
+    z-index: 100;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.posts {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.posts-title {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.5em;
+    margin-bottom: 30px;
+}
+
+.postos-cont {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    grid-gap: 30px;
+}
+
+.post {
+    background-color: rgb(241, 235, 235);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 350px;
+    /* box-shadow: #0000009f 1px 0px 7px 0px; */
+    display: flex;
+    flex-direction: column;
+    cursor: default;
+    text-align: justify;
+}
+
+.post:hover {
+    .post-img img {
+        transform: scale(1.11);
+    }
+}
+
+.post-img {
+    width: 100%;
+    height: 200px;
     overflow: hidden;
 }
 
-.slider-wrapper {
-    display: flex;
-    transition: all 0.5s ease-in-out;
-    transform: translateX(0px);
-}
-
-.slider-slide {
-    min-width: 100%;
-}
-
-.bg-post {
-    height: 550px;
-}
-
-.bg-post img {
+.post-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
-    border-radius: 20px 20px 0px 0px;
+    transition: transform 0.5s ease;
 }
 
 .post-title {
-    bottom: 30px;
-    background-color: rgb(33, 23, 56);
-    text-align: center;
-    width: 100%;
-    border-radius: 0px 0px 20px 20px;
-    padding: 7px 0;
-}
-
-.post-title a{
-    color: rgb(255, 255, 255);
-    font-size: 30px;
-    text-transform: uppercase;
-    text-decoration: none;
+    margin: 12px;
+    font-size: 19px;
     font-weight: bold;
 }
 
-.post-title a:hover{
-    text-decoration: underline;
+.post-subtitle {
+    margin: 5px 0;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 12px;
+    line-height: 25px;
 }
 
-/* Button-slider */
+.post-title p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+            line-clamp: 2; 
+    -webkit-box-orient: vertical;
+    overflow: hidden; /* Обрезаем все, что не помещается в область */
+    text-overflow: ellipsis; /* Добавляем многоточие */
+}
 
-#prevBtn, #nextBtn{
-    position: absolute;
-    top: 45%;
-    background: none;
-    border: none;
-    color: #ffffff;
+.post-subtitle p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+            line-clamp: 2; 
+    -webkit-box-orient: vertical;
+    overflow: hidden; /* Обрезаем все, что не помещается в область */
+    text-overflow: ellipsis; /* Добавляем многоточие */
+}
+
+.post-more {
+    display: flex;
+    align-items: center;
+    margin: 12px;
+    justify-content: space-between;
+}
+
+.post-more a {
+    color: red;
+    font-size: 17px;
     cursor: pointer;
-    font-weight: bold;
-    font-size: 50px;
-}
-#prevBtn {
-    left: 6px;
 }
 
-#nextBtn {
-    right: 6px;
+.post-more a:hover {
+    color: rgb(79, 28, 197);
+    transition: color 0.5s ease;
 }
+
+.author {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.author-left {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.author-title {
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    font-weight: 500px;
+}
+
+.author-quality {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 11px 7px;
+    font-size: 22px;
+    text-align: center;
+    width: 90%;
+    transition: border 0.5s ease;
+}
+
+.author-quality p{
+    border-radius: 30px;
+    border: 2px black solid;
+    padding: 7px 30px;
+    cursor: pointer;
+}
+
+.author-quality p:hover {
+    border: 2px blueviolet solid;
+}
+
+.author-right {
+    height: 100%;
+}
+
+.author-right img{
+    height: 100%;
+    border-radius: 15px;
+}
+
                     /* footer */
 
 footer {
     border-top: 2px black solid;
-    width: 100vw;
+    width: 100%;
     height: 70px;
     font-size: 17px;
     font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-transform: uppercase;
 }
 
 .footer-cont {
