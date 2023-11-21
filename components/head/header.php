@@ -33,10 +33,12 @@
                         
                             if ($username["role"] == "admin") {
                                 ?>
-                                <div class="profil-menu-cont">
-                                    <img draggable="false" src="../img/svg/admin.svg" alt=""> 
-                                    <p>Админ панель</p>
-                                </div>
+                                    <a href="./admin/users.php">
+                                        <div class="profil-menu-cont">
+                                            <img draggable="false" src="../img/svg/admin.svg" alt=""> 
+                                            <p>Админ панель</p>
+                                        </div>
+                                    </a>
                                 <?
                             }
 

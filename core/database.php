@@ -1,5 +1,5 @@
 <?php
 
-    $db = mysqli_connect("127.0.0.1","root","root", "travel");
+    $db = mysqli_connect("192.168.1.2","root","", "travel");
 
 ?>

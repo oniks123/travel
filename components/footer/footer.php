@@ -4,7 +4,7 @@
         <a draggable="false" href="#"><img draggable="false" src="../img/social-network/tg.svg" alt=""></a>
     </div>
 
-    <div class="menu">
+    <div class="footer-menu">
 
         <a href="../index.php">Главная</a>
         <a href="../menu/contacts.php">КОНТАКТЫ</a>

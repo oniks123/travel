@@ -8,30 +8,75 @@
 body {
     background-color: #e9eaeb;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
+    width: 100%;
     align-items: center;
+}
+
+main {
+    max-width: 1000px;
+    height: 100%;
+    margin-top: 10px;
+    background-color: white;
+    padding: 40px 70px;
+    border-radius: 10px;
 }
 
 .post {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    background-color: rgb(196, 193, 188);
-    box-shadow: rgba(0, 0, 0, 0.534) 0px 0px 3px 0;
-    border-radius: 30px;
-    padding: 10px 30px;
 }
 
+/* .post input, textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+} */
+
 .post-img {
-    width: 700px;
-    height: 400px;
+    max-width: 700px;
+    border-radius: 20px;
     overflow: hidden;
-    border-radius: 30px;
 }
 
 .post-img img{
     width: 100%;
     height: 100%;
 }
+
+.post-title {
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.post-subtitle {
+    width: 100%;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+/* .post-title input{
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.post-subtitle textarea{
+    width: 100%;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 500;
+} */
