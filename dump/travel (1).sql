@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Хост: 127.0.0.1:3306
--- Время создания: Ноя 21 2023 г., 12:00
--- Версия сервера: 8.0.19
--- Версия PHP: 8.0.1
+-- Хост: 192.168.1.2:3306
+-- Время создания: Ноя 22 2023 г., 01:34
+-- Версия сервера: 8.0.30
+-- Версия PHP: 8.1.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -29,9 +29,9 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `posts` (
   `id` int NOT NULL,
-  `img` varchar(256) COLLATE utf8mb4_general_ci NOT NULL,
-  `title` varchar(256) COLLATE utf8mb4_general_ci NOT NULL,
-  `subtitle` text COLLATE utf8mb4_general_ci NOT NULL,
+  `img` varchar(256) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `title` varchar(256) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `subtitle` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `data` timestamp NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -40,8 +40,9 @@ CREATE TABLE `posts` (
 --
 
 INSERT INTO `posts` (`id`, `img`, `title`, `subtitle`, `data`) VALUES
-(1, '1.png', 'Поездка на Мольдивы ', 'Мы там были пиво пили', '2023-11-21 07:39:11'),
-(2, '2.png', 'Поездка в сочи', 'Мы там были пиво пили', '2023-11-21 07:46:35');
+(1, '1.png', 'Поездка на Мольдивы ', 'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF', '2023-11-21 07:39:11'),
+(2, '2.png', 'Поездка в сочи', 'Мы там были кста', '2023-11-21 07:46:35'),
+(3, '3.png', 'Поездка в сочи', 'Мы там были кста', '2023-11-21 20:50:56');
 
 -- --------------------------------------------------------
 
@@ -91,7 +92,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT для таблицы `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT для таблицы `users`
