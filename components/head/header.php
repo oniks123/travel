@@ -1,8 +1,3 @@
-<?php 
-    session_start();
-?>
-
-
 <div class="header-container">
     <div class="header-menu">
         <ul>

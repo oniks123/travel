@@ -1,3 +1,5 @@
+<?session_start();?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,82 +41,37 @@
 
             <div class="postos-cont">
 
-                <div class="post">
-                    <div class="post-img">
-                        <img draggable="false" src="./img/post-img/2.png" alt="">
-                    </div>
+                <?php 
 
-                    <div class="post-title">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </div>
+                $post = mysqli_fetch_all(mysqli_query($db, "SELECT * FROM `posts`"));             
 
-                    <div class="post-subtitle">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fugiat sunt modi hic esse in ad explicabo, dignissimos nisi aut atque nostrum, molestias, pariatur totam rerum ea distinctio? Eos, tenetur.</p>
-                    </div>
+                    foreach ($post as $post) {
+                        ?>
+                        
+                            <div class="post">
+                                <div class="post-img">
+                                    <img draggable="false" src="./img/post-img/<?=$post["1"]?>" alt="">
+                                </div>
+            
+                                <div class="post-title">
+                                    <p><?=$post["2"]?></p>
+                                </div>
+            
+                                <div class="post-subtitle">
+                                    <p><?=$post["3"]?></p>
+                                </div>
+            
+                                <div class="post-more">
+                                    <a draggable="false" href="./core/post.php?id=<?=$post["0"]?>">Читать далее &rarr;</a>
+                                    <p><?=$post["4"]?></p>
+                                </div>
+                            </div>
 
-                    <div class="post-more">
-                        <a href="#">Читать далее &rarr;</a>
-                        <p>12.11.2023</p>
-                    </div>
-                </div>
-
-                <div class="post">
-                    <div class="post-img">
-                        <img draggable="false" src="./img/post-img/1.png" alt="">
-                    </div>
-
-                    <div class="post-title">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, maxime eligendi necessitatibus facilis perspiciatis repudiandae. Modi facere ab laborum incidunt id temporibus quod harum deleniti esse, tempore ex necessitatibus. Ipsam.</p>
-                    </div>
-
-                    <div class="post-subtitle">
-                        <p>QQ</p>
-                    </div>
-
-                    <div class="post-more">
-                        <a href="#">Читать далее &rarr;</a>
-                        <p>12.11.2023</p>
-                    </div>
-                </div>
-
-                <div class="post">
-                    <div class="post-img">
-                        <img draggable="false" src="./img/post-img/3.png" alt="">
-                    </div>
-
-                    <div class="post-title">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium nobis quidem laudantium nam neque fugiat! Quasi ex non animi. Similique saepe consequuntur at itaque? Adipisci laborum aperiam voluptatibus nam odio!</p>
-                    </div>
-
-                    <div class="post-subtitle">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore minima voluptate maxime voluptatum nesciunt rerum temporibus. Ipsam ad mollitia rerum optio. Dignissimos ex, laboriosam neque aspernatur quod consequuntur cupiditate odit?</p>
-                    </div>
-
-                    <div class="post-more">
-                        <a href="#">Читать далее &rarr;</a>
-                        <p>12.11.2023</p>
-                    </div>
-                </div>
-
-                <div class="post">
-                    <div class="post-img">
-                        <img draggable="false" src="./img/post-img/1.png" alt="">
-                    </div>
-
-                    <div class="post-title">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </div>
-
-                    <div class="post-subtitle">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, officiis?</p>
-                    </div>
-
-                    <div class="post-more">
-                        <a href="#">Читать далее &rarr;</a>
-                        <p>12.11.2023</p>
-                    </div>
-                </div>
-
+                        <?
+                    }
+                
+                ?>
+                
             </div>
         </section>
 
