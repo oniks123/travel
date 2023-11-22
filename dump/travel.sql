@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 192.168.1.2:3306
--- Время создания: Ноя 22 2023 г., 01:34
+-- Время создания: Ноя 22 2023 г., 23:22
 -- Версия сервера: 8.0.30
 -- Версия PHP: 8.1.9
 
@@ -40,7 +40,7 @@ CREATE TABLE `posts` (
 --
 
 INSERT INTO `posts` (`id`, `img`, `title`, `subtitle`, `data`) VALUES
-(1, '1.png', 'Поездка на Мольдивы ', 'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF', '2023-11-21 07:39:11'),
+(1, '1.png', 'Поездка на Мaльдивы', 'Мы катались там и мы тут Мы катались там и мы тут Мы катались там и мы тут Мы катались там и мы тут', '2023-11-21 07:39:11'),
 (2, '2.png', 'Поездка в сочи', 'Мы там были кста', '2023-11-21 07:46:35'),
 (3, '3.png', 'Поездка в сочи', 'Мы там были кста', '2023-11-21 20:50:56');
 
