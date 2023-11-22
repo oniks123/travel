@@ -1,0 +1,19 @@
+@media screen and (max-width: 880px) { 
+    .post-title{
+        font-size: 20px;
+        margin: 4px 0;
+    }
+
+    .post-title input{
+        font-size: 20px;
+    }
+
+    .post-subtitle{
+        font-size: 17px;
+        margin: 0;
+    }
+
+    .post-subtitle textarea{
+        font-size: 17px;
+    }
+}

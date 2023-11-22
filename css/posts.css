@@ -29,16 +29,24 @@ main {
     align-items: center;
 }
 
-/* .post input, textarea{
+.post input, textarea{
     width: 100%;
     border: none;
     outline: none;
+    padding: 7px;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+}
+
+.post input:focus, textarea:focus{
+    background-color: rgba(128, 128, 128, 0.322);
+    border-radius: 15px;
 }
 
 textarea {
-    resize: vertical;
-    min-height: 120px;
-} */
+    resize: none;
+    height: auto;
+}
 
 .post-img {
     max-width: 700px;
@@ -67,16 +75,16 @@ textarea {
     margin: 20px 0;
 }
 
-/* .post-title input{
+.post-title input{
     width: 100%;
     text-align: center;
     font-size: 25px;
     font-weight: bold;
 }
-
 .post-subtitle textarea{
     width: 100%;
     text-align: justify;
     font-size: 20px;
     font-weight: 500;
-} */
+}
+

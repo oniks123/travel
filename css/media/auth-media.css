@@ -1,0 +1,16 @@
+@media screen and (max-width: 880px) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 85vh;
+        position: unset;
+        transform: translate(0, 0%);
+        margin: 0 10px;
+    }
+    
+    .login-cont {
+        width: 70%;
+        padding: 0 60px;
+    }
+}

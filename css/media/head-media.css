@@ -1,0 +1,18 @@
+
+
+@media screen and (max-width: 880px) {
+    .header-menu ul li {
+        display: grid;
+        list-style-type: none;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        font-size: 13px;
+        grid-gap: 5px 10px;
+    }
+
+    .profil-menu {
+        left: -60px;
+    }
+
+}

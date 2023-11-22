@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/media/head-media.css">
+    <link rel="stylesheet" href="./css/media/media.css">
+    <link rel="stylesheet" href="./css/media/footer-media.css">
 </head>
 <body>
 

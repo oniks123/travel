@@ -1,0 +1,10 @@
+@media screen and (max-width: 880px) {
+    .footer-menu {
+        display: grid;
+        list-style-type: none;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        font-size: 13px;
+    }
+}

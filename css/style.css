@@ -64,6 +64,7 @@ section:last-child {
     color: white;
     font-weight: bold;
     z-index: 100;
+    text-align: center;
 }
 
 .info {
@@ -206,7 +207,6 @@ section:last-child {
     font-size: 40px;
     text-transform: uppercase;
     letter-spacing: 15px;
-    font-weight: 500px;
 }
 
 .author-quality {

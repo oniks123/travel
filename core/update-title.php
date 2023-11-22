@@ -10,11 +10,8 @@
 
     var_dump ($_POST);
 
+    $update_title = mysqli_query($db, "UPDATE `posts` SET `title` = '$_POST[title]' WHERE `posts`.`id` = $_POST[post_id]");
     
-
-    // $update_post = mysqli_query($db, "UPDATE `users` SET `username` = '$username', `role` = '$role' WHERE `users`.`id` = $id");
-
-    
-    header("location: ../admin/users.php");
+    header("location: ./post.php?id=$_POST[post_id]");
 
 ?>

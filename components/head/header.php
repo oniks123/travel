@@ -33,7 +33,7 @@
                         
                             if ($username["role"] == "admin") {
                                 ?>
-                                    <a href="./admin/users.php">
+                                    <a href="../admin/users.php">
                                         <div class="profil-menu-cont">
                                             <img draggable="false" src="../img/svg/admin.svg" alt=""> 
                                             <p>Админ панель</p>
